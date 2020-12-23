@@ -22,6 +22,9 @@ while sContinueYN == "y": # <--- Test experssion
     # Convert temperature from F to Celsius and store that in a new variable
     nDegreeC = (nDegreeF - 32) * 5 / 9
 
+    # Round to 2 significant digits
+    nDegreeC = round(nDegreeC, 2)
+
     # Print the result to the screen
     print ("\nTemperature in degrees C is:", nDegreeC)
 
@@ -30,7 +33,7 @@ while sContinueYN == "y": # <--- Test experssion
         print ("Pack long underwear!\n")
 
     # Check for it being a hot day and print a cute message
-    if nDegreeF > 100:
+    if nDegreeC > 35:
         print ("Remember to hydrate!\n")
 
     # Ask the user if they want to convert another temperature
@@ -41,9 +44,11 @@ while sContinueYN == "y": # <--- Test experssion
 '''
 Ideas to expand the program:
 1. Change the messages to have different advice for extreme temperatures.
-2. Change the message to show the temperature in F and C, i.e. 'The temperature 104 F is 40.0 C'
+2. Change the message to show the temperature in F and C, i.e. 'The temperature 
+   104 F is 40.0 C'
 3. Add another temperature trigger check for very extreme temps.
-4. Collect the person’s name before the loop starts (store in a variable) and add this to the output messages.
+4. Collect the person’s name before the loop starts (store in a variable) and 
+   add this to the output messages.
 5. Check for Y or Yes or yes in addition to checking for just y
 6. Change to allow for numbers other than integers
 7. Add option to change from F to C or C to F (advanced)
