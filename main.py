@@ -12,7 +12,7 @@
 #
 # Below we make a variable should_continue which holds whether the program should keep going.
 # We start it off with the boolean value True. 
-should_continue = "y"
+should_continue = True
  
 # The while loop will run the instructions in the block within it as long as the test condition is True.
 while should_continue: # <--- Test experssion
